@@ -1,6 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* header */
+
+header {
+    background: rgba(255, 144, 14, 0.10);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3.125rem;
+}
+
+.nav-logo h1 {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.nav-items {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-items li {
+    list-style: none;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #424242;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 100px;
+    padding-bottom: 2.5rem;
+}
+
+.banner h1 {
+    color: #131313;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.banner p {
+    color: #727272;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+}
+
+.banner button {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    width: 180px;
+    height: 64px;
+    border: none;
+    margin-left: 42%;
+    border-radius: 8px;
+    background: #FF900E;
+    cursor: pointer;
+}
+
+.banner img {
+    width: 100%;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 576px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .banner h1 {
+        font-size: 35px;
+    }
+
+    .banner button {
+        margin-left: 25%;
+    }
+}
+
+/* Medium devices */
+
+@media screen and (min-width: 577px) and (max-width: 960px) {
+    nav {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .banner h1 {
+        font-size: 40px;
+    }
+
+    .banner button {
+        margin-left: 40%;
+    }
 }
