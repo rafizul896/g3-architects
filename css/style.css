@@ -87,6 +87,64 @@ nav {
     width: 100%;
 }
 
+/* features */
+
+.features {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem
+}
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.team img {
+    width: 100%;
+}
+
+.features-text {
+    width: 40%;
+}
+
+.features-text h1 {
+    color: #131313;
+    font-size: 2.81rem;
+    font-weight: 700;
+}
+
+.features-text h1 .part-1 {
+    color: #727272;
+}
+
+.features-text h1 .part-2 {
+    color: #FF900E;
+}
+
+.features-text p {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: justify;
+    margin: 1.25rem 0 1.5rem 0;
+}
+
+.features-text .fea-btn {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    background: #FF900E;
+    border: none;
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+}
+
 
 /* Responsive */
 
@@ -106,6 +164,19 @@ nav {
 
     .banner button {
         margin-left: 25%;
+    }
+
+    /* features */
+
+    .features {
+        flex-direction: column-reverse;
+        border-top: 1px solid #FF900E;
+        margin-top: 2.5rem;
+        padding-top: 2rem;
+    }
+
+    .features-text {
+        width: 100%;
     }
 }
 
@@ -127,5 +198,16 @@ nav {
 
     .banner button {
         margin-left: 40%;
+    }
+
+    .features {
+        flex-direction: column-reverse;
+        border-top: 1px solid #FF900E;
+        margin-top: 2.5rem;
+        padding-top: 2rem;
+    }
+
+    .features-text {
+        width: 100%;
     }
 }
